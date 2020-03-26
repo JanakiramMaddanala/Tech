@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Location Object</title>
+</head>
+
+<body>
+    <script>
+        console.log('Path Name: ', location.pathname);
+        console.log('hash: ', location.hash);
+        console.log('host: ', location.host);
+        console.log('port: ', location.port);
+        console.log('protocol: ', location.protocol);
+        console.log('origin: ', location.origin);
+        console.log('search: ', location.search);
+        console.log('href: ', location.href);
+        // window.location = "index.html";
+        setTimeout(function() {
+            console.log('href: ', location.href);
+
+            location.replace("www.my.dnet.deloitte.com");
+        }, 1000)
+    </script>
+</body>
+
+</html>

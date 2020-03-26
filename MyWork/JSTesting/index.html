@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="main.css">
+    <title>Javascript Testing</title>
+  </head>
+  <body>
+    <div id="mocha"></div>
+    <script src="node_modules/mocha/mocha.js"></script>
+    <script src="node_modules/chai/chai.js"></script>
+    <script>
+        console.log(window.mocha == mocha);
+        mocha.setup("bdd");
+    </script>
+
+    <!-- load code you want to test here -->
+    <script src="js/calculator.js"></script>
+
+    <!-- load your test files here -->
+    <script src="test/mainTest.js"></script>
+    <script src="test/calculatorTest.js"></script>
+    <script src="test/arrayTest.js"></script>
+
+    <script>
+      mocha.run();
+    </script>
+  </body>
+</html>

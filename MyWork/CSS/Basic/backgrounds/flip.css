@@ -1,0 +1,50 @@
+:root {
+    --rotate-card: rotateY(180deg);
+}
+
+.idea-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0 1vw;
+}
+
+.idea-main {
+    position: relative;
+    width: 31vw;
+    height: 120px; 
+    transition: transform 3s ease-in, box-shadow 1s ease-in;
+    transform-style: preserve-3d;
+    margin-bottom: 1vw;
+}
+
+.idea-logo {
+    background: url("DSketch.jpg") center/cover border-box;
+    position: relative;
+    width: 100%;
+    height:100%;
+    background-color: red;
+    backface-visibility: hidden;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.idea-description {
+    position: absolute;
+    top:0;
+    width: 100%;
+    height:100%;
+    background: blue;
+    transform: var(--rotate-card);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.idea-main:hover{
+    transform:var(--rotate-card);
+    box-shadow: -2px -2px 2px grey;
+}
+

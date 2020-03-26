@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Events</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <input type="button" value="Test" id="btnTest" />
+
+    <div id="copyDiv">
+        Dear user,
+        The copying is forbidden for you.
+        If you know JS or HTML, then you can get everything from the page source though.
+    </div>
+
+    <script>
+        var testButton = document.querySelector("#btnTest");
+        testButton.addEventListener("mousedown", function () {
+            console.log(`Mouse Down: ${getButtonName(event.which)}`);
+        });
+
+        var divCopy = document.getElementById('copyDiv');
+        divCopy.addEventListener('copy', function () {
+            // event.preventDefault();
+            console.log(event.ctrlKey);
+            if (event.ctrlKey) {
+                console.log('Copied to clipboard!');
+                return true;
+            }
+
+            console.log('Copying is not permitted!');
+            return false;
+
+        });
+
+        testButton.addEventListener("mouseup", function () {
+            console.log(`Mouse Up: ${getButtonName(event.which)}`);
+        });
+
+        testButton.addEventListener("click", function () {
+            console.log(event);
+            console.log(event.ctrlKey);
+            console.log(`Mouse Click: ${getButtonName(event.which)}`);
+        });
+
+        testButton.addEventListener("contextmenu", function () {
+            console.log(`Context Menu: ${getButtonName(event.which)}`);
+        });
+
+        testButton.addEventListener("dblclick", function () {
+            console.log(`Double Click: ${getButtonName(event.which)}`);
+        });
+
+        function getButtonName(which) {
+            var buttons = new Map();
+            buttons.set(1, "Left Mouse");
+            buttons.set(2, "Middle Mouse");
+            buttons.set(3, "Right Mouse");
+            if (buttons.has(which)) {
+                return buttons.get(which);
+            }
+        }
+    </script>
+</body>
+
+</html>

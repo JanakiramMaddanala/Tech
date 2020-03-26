@@ -1,0 +1,10 @@
+json-server
+faker
+concurrently
+nodemon
+ts-node
+express
+body-parser
+cookie-session
+gh-pages
+react-router-dom

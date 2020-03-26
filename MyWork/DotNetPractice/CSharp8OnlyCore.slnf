@@ -1,0 +1,8 @@
+{
+  "solution": {
+    "path": "DotNetPractice.sln",
+    "projects": [
+      "CSharp8New\\CSharp8New.csproj"
+    ]
+  }
+}

@@ -1,0 +1,1 @@
+1. document.body won't be accessible while running script before it.

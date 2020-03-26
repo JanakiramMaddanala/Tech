@@ -1,0 +1,13 @@
+db.exmoviestarts.find({genre: {$size: 2}}).pretty()
+db.places.find({location: {$near: {$geometry: {type: "Point", coordinates: [78.38987,17.44118]}, $minDistance: 280, $maxDistance: 500}}})
+db.places.find({location: {$geoWithin: {$geometry: {type: "Polygon", coordinates: [[[78.38749,17.44372],[78.39065,17.44147],[78.3887,17.43602], [78.38533,17.44089],[78.38749,17.44372]]] } } } })
+db.areas.find({area: {$geoIntersects: {$geometry: {type: "Point", coordinates: [78.38954,17.43948]}} } })
+
+> db.places.find({location: {$geoWithin: {$centerSphere: [[78.38954,17.43948], 0.1/6378.1]}}})
+> db.places.find({location: {$geoWithin: {$centerSphere: [[78.38954,17.43948], 0.2/6378.1]}}})
+> db.places.find({location: {$geoWithin: {$centerSphere: [[78.38954,17.43948], 0.3/6378.1]}}})
+
+
+Aggregation
+-----------
+db.persons.aggregate([ {$match: { "location.state": "alberta"}}, {$group: { _id: {state: "$location.state", gender: "$gender" }, count: {$sum: 1}}}])

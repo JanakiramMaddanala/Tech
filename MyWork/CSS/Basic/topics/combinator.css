@@ -1,0 +1,23 @@
+
+div > div {
+    background: lightgray;
+    border: 1px solid black;
+}
+
+h2 ~ div {
+    background: darkgray;
+}
+
+body {
+    color: black;
+    background:lightpink;
+}
+
+html {
+    background: red;
+}
+
+
+
+
+

@@ -1,0 +1,12 @@
+C:\Users\jmaddanala\Documents\MyProjects\DotNetPractice\CSharp8New\obj\Debug\netcoreapp3.0\CSharp8New.csprojAssemblyReference.cache
+C:\Users\jmaddanala\Documents\MyProjects\DotNetPractice\CSharp8New\obj\Debug\netcoreapp3.0\CSharp8New.csproj.CoreCompileInputs.cache
+C:\Users\jmaddanala\Documents\MyProjects\DotNetPractice\CSharp8New\obj\Debug\netcoreapp3.0\CSharp8New.AssemblyInfoInputs.cache
+C:\Users\jmaddanala\Documents\MyProjects\DotNetPractice\CSharp8New\obj\Debug\netcoreapp3.0\CSharp8New.AssemblyInfo.cs
+C:\Users\jmaddanala\Documents\MyProjects\DotNetPractice\CSharp8New\bin\Debug\netcoreapp3.0\CSharp8New.exe
+C:\Users\jmaddanala\Documents\MyProjects\DotNetPractice\CSharp8New\bin\Debug\netcoreapp3.0\CSharp8New.deps.json
+C:\Users\jmaddanala\Documents\MyProjects\DotNetPractice\CSharp8New\bin\Debug\netcoreapp3.0\CSharp8New.runtimeconfig.json
+C:\Users\jmaddanala\Documents\MyProjects\DotNetPractice\CSharp8New\bin\Debug\netcoreapp3.0\CSharp8New.runtimeconfig.dev.json
+C:\Users\jmaddanala\Documents\MyProjects\DotNetPractice\CSharp8New\bin\Debug\netcoreapp3.0\CSharp8New.dll
+C:\Users\jmaddanala\Documents\MyProjects\DotNetPractice\CSharp8New\bin\Debug\netcoreapp3.0\CSharp8New.pdb
+C:\Users\jmaddanala\Documents\MyProjects\DotNetPractice\CSharp8New\obj\Debug\netcoreapp3.0\CSharp8New.dll
+C:\Users\jmaddanala\Documents\MyProjects\DotNetPractice\CSharp8New\obj\Debug\netcoreapp3.0\CSharp8New.pdb

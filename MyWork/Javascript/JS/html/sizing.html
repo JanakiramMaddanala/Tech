@@ -1,0 +1,146 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+
+        #example {
+            color: blue;
+            background-color: red;
+            width: 100px;
+            left: 50px;
+            top: 40px;
+            position: absolute;
+            padding: 10px;
+            height: 100px;
+            border: solid 15px green;
+            overflow-y: scroll;
+        }
+
+        #example1 {
+            color: blue;
+            background-color: red;
+            width: 100px;
+            left: 250px;
+            top: 50px;
+            position: absolute;
+            height: 100px;
+            border: solid 15px green;
+        }
+
+        #ball {
+            width: 10px;
+            height: 10px;
+            border: 2px solid black;
+            border-radius: 3px;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <main id="main" style="position:absolute">
+        <article>
+            <div id="example">
+                HTML 5 is a software solution stack that defines the properties and
+                behaviors of web page content by implementing a markup based pattern to it.
+                HTML 5 is the fifth and current major version of the HTML standard, and subsumes XHTML.
+            </div>
+        </article>
+    </main>
+
+    <main id="main2" data-action="save">
+        <article>
+            <div id="example1">
+                <div id="ball">
+                    <a href="www.msdn.com">msdn</a>
+                </div>
+            </div>
+        </article>
+    </main>
+    <script>
+        console.log(`offsetParent : ${example.offsetParent.id}`); // main
+        console.log(`offsetLeft : ${example.offsetLeft}`); // 180 (note: a number, not a string "180px")
+        console.log(`offsetTop : ${example.offsetTop}`); // 180
+        console.log(`clientWidth : ${example.clientWidth}`);
+        console.log(`clientHeight : ${example.clientHeight}`);
+        console.log(`clientTop : ${example.clientTop}`);
+        console.log(`clientLeft : ${example.clientLeft}`);
+        console.log(`offsetWidth: ${example.offsetWidth}`);
+        console.log(`offsetHeight: ${example.offsetHeight}`);
+        console.log(`scrollWidth: ${example.scrollWidth}`);
+        console.log(`scrollHeight: ${example.scrollHeight}`);
+        console.log(`scrollTop: ${example.scrollTop}`);
+        let previousScrollTop = 0;
+        let offset = 100;
+        setInterval(() => {
+            example.scrollTop = example.scrollTop + (offset);
+            let currentScrollTop = example.scrollTop;
+            if (Math.abs((currentScrollTop - previousScrollTop)) >= Math.abs(offset)) {
+                previousScrollTop = example.scrollTop;
+            } else {
+                offset = offset > 0 ? -offset : offset;
+                previousScrollTop = currentScrollTop;
+            }
+
+        }, 1000);
+
+        ball.style.left = `${example1.clientWidth / 2 - ball.offsetWidth / 2}px`;
+        ball.style.top = `${example1.clientHeight / 2 - ball.offsetHeight / 2}px`;
+
+        let ballElement = document.getElementById("ball");
+        let ballCoordinates = ballElement.getBoundingClientRect();
+        console.log(ballCoordinates);
+
+        let elem = document.elementFromPoint(309, 109);
+        console.log(elem);
+        console.log(pageXOffset);
+        console.log(pageYOffset);
+
+        // main2.onclick = function(event){
+        //     console.log(event.target);
+        //     console.log(event.currentTarget);
+        //     console.log(event.clientX);
+        //     console.log(event.clientY);
+        //     console.log(event.eventPhase);
+        //     event.stopImmediatePropagation();
+        // }
+
+        main2.addEventListener('click', function (event) {
+            console.log(`Capturing`);
+            console.log(main2.tagName);
+            // console.log("inside event listener");
+            // console.log(event.target);
+            // console.log(event.currentTarget);
+        }, true);
+
+        main2.addEventListener('click', function (event) {
+            console.log(`Bubbling`);
+            console.log(main2.tagName);
+            // console.log("inside event listener");
+            // console.log(event.target);
+            // console.log(event.currentTarget);
+        });
+
+
+        main2.addEventListener('click', {
+            handleEvent(event) {
+                console.log("object event listener");
+                console.log(event.target);
+                console.log(event.currentTarget);
+            }
+        });
+
+        console.log(main2.dataAction);
+        console.log(main2.dataset);
+        console.log(main2.dataset.action);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,4 @@
+Sequence Limitations
+1. Views
+2. User-Defined Functions
+3. Computed Columns

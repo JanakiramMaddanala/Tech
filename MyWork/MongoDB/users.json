@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Ram",
+        "age": 26,
+        "email": "ram.rjy09@gmail.com",
+        "designation": "Software Engineer"
+    },
+    {
+        "name": "Srinivas",
+        "age": 27,
+        "email": "msbabu@gmail.com",
+        "designation": "Civil Engineer"
+    },
+    {
+        "name": "Kishore",
+        "age": 29,
+        "email": "krishore07@gmail.com",
+        "designation": "Marketing Lead"
+    }
+]

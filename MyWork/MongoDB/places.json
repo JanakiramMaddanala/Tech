@@ -1,0 +1,27 @@
+[
+    {
+        "name": "As Grand PG Mens Hostel",
+        "location": {
+            "type": "Point",
+            "coordinates": [78.387564, 17.4375606]
+        }
+    },
+    {
+        "name": "Sri Krishna Ply",
+        "location": {
+            "type": "Point",
+            "coordinates": [78.3879477, 17.4429308]
+        }
+    },
+    {
+        "name": "Madhapur Police Station",
+        "location": {
+            "type": "Point",
+            "coordinates": [78.3958592, 17.439586]
+        }
+    }
+]
+
+// Area: [[78.38749,17.44372],[78.39065,17.44147],[78.3887,17.43602], [78.38533,17.44089],[78.38749,17.44372]]
+
+// Point: [78.39198,17.44335]

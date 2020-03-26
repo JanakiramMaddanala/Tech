@@ -1,0 +1,25 @@
+.card {
+    width: 150px;
+    height: 100px;
+    margin-top: 4px;
+    transition: opacity 2s ease-out, filter 2s ease-in;
+}
+
+.card-background {
+    background-image: url("DSketch.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card:hover {
+    opacity: 0.5;
+    filter: contrast(2);
+}

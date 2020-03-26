@@ -1,0 +1,12 @@
+C:\Users\jmaddanala\Documents\MyProjects\DotNetPractice\Algorithms\bin\Debug\netcoreapp3.0\Algorithms.exe
+C:\Users\jmaddanala\Documents\MyProjects\DotNetPractice\Algorithms\bin\Debug\netcoreapp3.0\Algorithms.deps.json
+C:\Users\jmaddanala\Documents\MyProjects\DotNetPractice\Algorithms\bin\Debug\netcoreapp3.0\Algorithms.runtimeconfig.json
+C:\Users\jmaddanala\Documents\MyProjects\DotNetPractice\Algorithms\bin\Debug\netcoreapp3.0\Algorithms.runtimeconfig.dev.json
+C:\Users\jmaddanala\Documents\MyProjects\DotNetPractice\Algorithms\bin\Debug\netcoreapp3.0\Algorithms.dll
+C:\Users\jmaddanala\Documents\MyProjects\DotNetPractice\Algorithms\bin\Debug\netcoreapp3.0\Algorithms.pdb
+C:\Users\jmaddanala\Documents\MyProjects\DotNetPractice\Algorithms\obj\Debug\netcoreapp3.0\Algorithms.csprojAssemblyReference.cache
+C:\Users\jmaddanala\Documents\MyProjects\DotNetPractice\Algorithms\obj\Debug\netcoreapp3.0\Algorithms.csproj.CoreCompileInputs.cache
+C:\Users\jmaddanala\Documents\MyProjects\DotNetPractice\Algorithms\obj\Debug\netcoreapp3.0\Algorithms.AssemblyInfoInputs.cache
+C:\Users\jmaddanala\Documents\MyProjects\DotNetPractice\Algorithms\obj\Debug\netcoreapp3.0\Algorithms.AssemblyInfo.cs
+C:\Users\jmaddanala\Documents\MyProjects\DotNetPractice\Algorithms\obj\Debug\netcoreapp3.0\Algorithms.dll
+C:\Users\jmaddanala\Documents\MyProjects\DotNetPractice\Algorithms\obj\Debug\netcoreapp3.0\Algorithms.pdb

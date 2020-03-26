@@ -1,0 +1,32 @@
+[
+    {
+        "firstName": "Max",
+        "lastName": "Schewarzmuller",
+        "age": 29,
+        "history": [
+            {"disease": "cold", "treatment": "tablets"},
+            {"disease": "fever", "treatment": "tablets"},
+            {"disease": "headache", "treatment": "tablets"},
+        ]
+    },
+    {
+        "firstName": "Max1",
+        "lastName": "Schewarzmuller",
+        "age": 29,
+        "history": [
+            {"disease": "cold", "treatment": "tablets"},
+            {"disease": "fever", "treatment": "tablets"},
+            {"disease": "headache", "treatment": "tablets"},
+        ]
+    },
+    {
+        "firstName": "Max2",
+        "lastName": "Schewarzmuller",
+        "age": 29,
+        "history": [
+            {"disease": "cold", "treatment": "tablets"},
+            {"disease": "fever", "treatment": "tablets"},
+            {"disease": "headache", "treatment": "tablets"},
+        ]
+    }
+]

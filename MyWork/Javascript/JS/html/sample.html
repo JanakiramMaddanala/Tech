@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <label for="message">Enter Message</label>
+      <input type="text" id="message" />
+      <input type="submit" id="messageSubmit" onclick="postMessage()"></button>
+    </div>
+
+    <div>
+      <label for="reply" id="replyToMessage"></label>
+    </div>
+
+    <script>
+     
+      var worker = new Worker("./worker.js");
+      var reply = document.getElementById("replyToMessage");
+
+      function postMessage(){
+        var messageInput = document.getElementById("message");
+        var messageText = messageInput.value;
+        if(messageText){
+            worker.postMessage(messageText);
+            reply.innerHTML = '<span>Wating for response from web worker.</span>';
+        }
+
+        // worker.terminate();
+      }
+      worker.onerror = function(e){
+        console.log(e.message);
+        console.log(e.filename);
+        console.log(e.lineno);
+      }
+      worker.onmessage = function(e) {
+        if(e.data){
+            reply.innerText = e.data;
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+.box {
+    padding: 50px 10px 0px 20px;
+    border: 1px solid red;
+    margin: 50px 10px 5px 4px;
+    display: inline-block;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+.super-box {
+    height: 300px;
+    width: 50%;
+    display: none;
+    /* visibility: hidden; */
+}
+
+.box:hover {
+    background: crimson;
+    color: cornsilk;
+    cursor: pointer;
+}

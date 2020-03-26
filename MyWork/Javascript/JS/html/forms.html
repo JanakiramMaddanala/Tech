@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Forms</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <form name="my">
+        <input name="one" value="1">
+        <input name="two" value="2">
+        <input type="radio" name="age" value="10">
+        <input type="radio" name="age" value="20">
+    </form>
+
+    <script>
+        var forms = document.forms;
+        var myForm = document.forms.my;
+        var one = myForm.one;
+        console.log(one.form);
+        console.log(myForm.one == myForm.elements.one);
+        myForm.one.name = "ONE";
+        console.log(myForm.elements.ONE);
+        console.log(myForm.one);
+        console.log(myForm.one == myForm.ONE);
+
+        console.log(document.forms);
+        console.log(forms.my);
+        console.log(forms[0]);
+        console.log(forms.my.elements);
+        console.log(forms.my.elements.one);
+        console.log(forms.my.elements.two);
+        forms.my.elements.one.value = 10;
+        console.log(forms.my.age[0]);
+
+    </script>
+</body>
+
+</html>

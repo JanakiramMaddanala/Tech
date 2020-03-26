@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Window Position</title>
+    <script>
+        var leftPosition = typeof window.screenLeft === 'number' ? window.screenLeft : window.screenX;
+        var topPosition = typeof window.screenTop === 'number' ? window.screenTop : window.screenY;
+        console.log(leftPosition, topPosition);
+        // window.screenLeft = 100;
+        // window.screenTop = 150;
+        // var leftPosition = typeof window.screenLeft === 'number' ? window.screenLeft : window.screenX;
+        // var topPosition = typeof window.screenTop === 'number' ? window.screenTop : window.screenY;
+        // console.log(leftPosition, topPosition);
+        // window.moveBy(-500, 0);
+        // console.log(window.screenLeft);
+        // console.log(window.screenTop);
+        // window.resizeTo(100, 100);
+        // var indexWindow = window.open("index.html", "", "height=400,width=400,left=10,top=10,fullscreen=no");
+        // // indexWindow.resizeTo(200,200);
+        // console.log(`Index Window opened by ${indexWindow.opener}`);
+        
+        // indexWindow.moveTo(100, 100);
+        // for (let index = 0; index < 10; index++) {
+        //     indexWindow.moveBy(indexWindow.screenLeft + index * 10, indexWindow.screenTop + index * 10)
+        // }
+        // // indexWindow.close();
+        // console.log(indexWindow.closed);
+        
+        
+        // window.print();
+        
+        
+        // var interval = setInterval(function () {
+        //     console.log(indexWindow.screenLeft, indexWindow.screenTop);
+        //     const step = 10; 
+        //     indexWindow.moveBy(indexWindow.screenLeft + step, indexWindow.screenTop + step);            
+        // }, 1000);
+
+       
+    </script>
+</head>
+
+<body style="background-color:gray">
+    <div>
+        <h1>Window Positioning....</h1>
+    </div>
+    <script>
+        var found = window.find('Window');
+        console.log(found);
+        console.log(window.find('Position'));
+        var found = window.find('Window');
+        console.log(found);
+    </script>
+</body>
+
+</html>

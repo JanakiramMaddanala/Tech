@@ -1,0 +1,25 @@
+{
+  "name": "jstesting",
+  "version": "1.0.0",
+  "description": "Javascript Testing",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "testing",
+    "javascript"
+  ],
+  "author": "Janakiram Maddanala",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4"
+  }
+}

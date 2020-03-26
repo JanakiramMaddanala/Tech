@@ -1,0 +1,38 @@
+[
+    {
+        "title": "ES10 Features",
+        "text": "Coming soon",
+        "tags": ["ecmascript", "javascript"],
+        "createdBy": ObjectId("5e452034f8a603386291d835"),
+        "comments": [
+            {
+                "text": "Crazy! Let us know once it is available",
+                "author": ObjectId("5e452034f8a603386291d836")
+            }
+        ]
+    },
+    {
+        "title": "ES8 Features",
+        "text": "Coming soon",
+        "tags": ["ecmascript", "javascript"],
+        "createdBy": ObjectId("5e452034f8a603386291d836"),
+        "comments": [
+            {
+                "text": "Crazy! Let us know once it is available",
+                "author": ObjectId("5e452034f8a603386291d835")
+            }
+        ]
+    },
+    {
+        "title": "CSS Animations",
+        "text": "They are really cool",
+        "tags": ["css", "sass"],
+        "createdBy": ObjectId("5e452034f8a603386291d837"),
+        "comments": [
+            {
+                "text": "Great stuff. Thank you.",
+                "author": ObjectId("5e452034f8a603386291d835")
+            }
+        ]
+    }
+]

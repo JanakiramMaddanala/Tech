@@ -1,0 +1,55 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .welcome{
+            background-color: green;
+            width:100px;
+        }
+
+        #elem-content {
+            padding-top:25px;
+            padding-left :30px;
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body style="color:none" data-text="Hello Body!!!">
+    <h1 header-name="Heading 1" data-h1-value="h1">
+        <div>HTML 5</div>
+    </h1>
+    <script>
+        let divTags = document.getElementsByTagName('div');
+        console.log(`Initial DIV count using getElementsByTagName: ${divTags.length}`);
+        let divQueryTags = document.querySelectorAll('div');
+        console.log(`Initial DIV count using querySelectorAll : ${divQueryTags.length}`)
+    </script>
+    <div id="elem" name="myname">
+        <div id="elem-content">Ram</div>
+    </div>
+    <script>
+        console.log(`Final DIV count using getElementsByTagName: ${divTags.length}`);
+        divQueryTags = document.querySelectorAll('div');
+        console.log(`Final DIV count using querySelectorAll : ${divQueryTags.length}`)
+    </script>
+
+    <div user-info="name"></div>
+    <div user-info="age"></div>
+
+    <!-- <ol id="ol">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>       
+    </ol> -->
+
+</body>
+
+<script src="js/sizing.js"></script>
+
+</html>

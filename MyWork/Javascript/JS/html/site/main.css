@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: lightgrey;
+  overflow-x:hidden;
+}
+
+header {
+  background: gray;
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+}
+
+#mainHeading {
+  flex: 1;
+  padding: 2em;
+}
+
+.nav-container {
+	display: flex;
+	align-content: center;
+	width:90%;
+	margin:0 auto;
+}
+
+.nav-links {
+	flex:2;
+	display: flex;
+	list-style-type: none;
+	background-color:darkslategray;
+	width: 100%;
+}
+
+.nav-links li {
+	display: flex;
+	justify-content: space-around;
+	width:100%;
+}
+
+.nav-link:link {
+	display: flex;
+	text-decoration: none;
+	align-items: center;
+	color:lightslategray;
+	cursor: pointer;
+	width:100%;
+	justify-content: center;
+	font-weight: bold;
+}
+
+.nav-links li:hover {
+	background:darkgray;
+}
+
+.nav-link:hover {
+	color:darkslategray;
+}
+
+.nav-link:visited {
+	color:black;
+}
+
+
+#favorites {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+#favorites img {
+	padding: 1em;	
+}
+
+#mobile-favorites {
+	display: none;	
+}
+
+
+/* Mobile */
+@media screen and (max-width:700px) {
+	#mobile-nav {
+		display: flex; 
+		flex:0.1;
+		justify-content: space-between;
+		align-items:center;
+		order:1;
+		padding:0.5em;
+	}
+
+	#mainHeading {
+		order:2;
+	}
+
+	#mobile-favorites {
+		display:flex;
+		align-items: center;
+		justify-content: center;
+		flex:0.1;
+		order:3;
+		padding:0.5em;
+	}
+
+	.nav-links  {
+		transform: translateX(110%);
+		transition: transform 500ms ease-in;
+	}
+
+	.burger-toggle #line1 {
+		transform: rotate(-45deg);
+	}
+
+	.burger-toggle #line3 {
+		transform: rotate(45deg);
+		position: relative;
+		top:-11px;
+	}
+
+	.burger-toggle #line2 {
+		display: none;
+	}
+
+	.nav-links {
+		flex-direction: column;
+	}
+
+	.nav-links li {
+		padding:1em;
+	}
+
+	#favorites {
+		display: none;
+	}
+	
+	#burger {
+		display: flex;
+		flex-direction: column;
+		margin-right: 2px;
+	}
+	
+	#line1 {
+		width:2em;
+		height: 0.5em;
+		background: darkslategray;
+		margin-bottom: 0.2em;
+	}
+	
+	#line2 {
+		width:2em;
+		height: 0.5em;
+		background: darkslategray;
+		margin-bottom: 0.2em;
+	}
+	
+	#line3 {
+		width:2em;
+		height: 0.5em;
+		background: darkslategray;
+		margin-bottom: 0.2em;
+	}	
+}
+
+
+
+
+.nav-toggle {
+	transform: translateX(0%);
+}
+

@@ -1,0 +1,23 @@
+<html>
+
+<head>
+    <title>Browser Object Model</title>
+    <script>
+        console.log('WindowName', 'Is window === top?', 'Parent');
+
+        // window.name = 'BOM';
+        console.log(window.name, window === top);
+        // window.open("index2.html", "_blank")
+
+    </script>
+</head>
+<frameset rows="160,*">
+    <frame src="frame.html" name="first" />
+    <frameset cols="25%,*,25%">
+        <frame src="frame.html" name="second" />
+        <frame src="frame2.html" name="third" />
+        <frame src="frame.html" name="fourth" />
+    </frameset>
+</frameset>
+
+</html>

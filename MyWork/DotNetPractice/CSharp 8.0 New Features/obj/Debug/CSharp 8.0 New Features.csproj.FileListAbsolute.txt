@@ -1,0 +1,7 @@
+C:\Users\jmaddanala\Documents\MyProjects\DotNetPractice\CSharp 8.0 New Features\bin\Debug\CSharp 8.0 New Features.exe.config
+C:\Users\jmaddanala\Documents\MyProjects\DotNetPractice\CSharp 8.0 New Features\bin\Debug\CSharp 8.0 New Features.exe
+C:\Users\jmaddanala\Documents\MyProjects\DotNetPractice\CSharp 8.0 New Features\bin\Debug\CSharp 8.0 New Features.pdb
+C:\Users\jmaddanala\Documents\MyProjects\DotNetPractice\CSharp 8.0 New Features\obj\Debug\CSharp 8.0 New Features.csprojAssemblyReference.cache
+C:\Users\jmaddanala\Documents\MyProjects\DotNetPractice\CSharp 8.0 New Features\obj\Debug\CSharp 8.0 New Features.csproj.CoreCompileInputs.cache
+C:\Users\jmaddanala\Documents\MyProjects\DotNetPractice\CSharp 8.0 New Features\obj\Debug\CSharp 8.0 New Features.exe
+C:\Users\jmaddanala\Documents\MyProjects\DotNetPractice\CSharp 8.0 New Features\obj\Debug\CSharp 8.0 New Features.pdb

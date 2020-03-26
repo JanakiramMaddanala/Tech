@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM</title>
+</head>
+
+<body>
+    <div id="main">
+        <!-- Write Comments when really needed-->
+        <h1 class="abc" lang="en-US" dir="ltr" title="Main Div">Hello</h1>
+        <span>World</span>
+        <p>We are hiring!</p>
+        <a href="#">Anchor with href</a>
+        <a name="sample">Anchor with name</a>
+        <img src="#" alt="">
+    </div>
+    <div id="main2" name="main2">
+        <!-- Write Comments when really needed-->
+        <h1>Hi</h1>
+        <span>World</span>
+        <p>We are hiring!</p>
+    </div>
+    <form action="post">
+        <input type="text">
+        <input type="button" value="submit">
+    </form>
+
+    <script>
+        var mainElement = document.getElementById("main");
+        mainElement.normalize();
+        console.log(mainElement.childNodes);
+        var h1 = mainElement.firstChild.nextSibling;
+        console.log(mainElement.getAttribute("id"));
+
+        console.log(mainElement.childNodes);
+        var replacedNode = mainElement.replaceChild(h1, mainElement.firstChild);
+        console.log(replacedNode);
+        console.log(mainElement.nodeType);
+        console.log(mainElement.nodeName);
+        console.log(mainElement.nodeValue);
+        console.log(mainElement.childNodes);
+        mainElement.insertBefore(h1, mainElement.firstChild);
+        console.log(mainElement.childNodes);
+        console.log(window.document.doctype);
+        console.log(window.document.title);
+        document.title = "DOM New";
+        console.log(document.URL);
+        console.log(document.domain);
+        console.log(document.referrer);
+
+        var h1s = document.getElementsByTagName('h1');
+        console.log(h1s);
+        var main2 = document.getElementsByName('main2');
+        console.log(main2);
+        console.log(document.forms);
+        console.log(document.anchors);
+        console.log(document.links);
+        console.log(document.images);
+
+        document.writeln("Hi, Ram");
+        document.writeln("Hi, Ram");
+        // document.write("<script type=\"text/javascript\" src=\"file.js\">" + "</script>");
+    </script>
+</body>
+
+</html>

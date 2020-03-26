@@ -1,0 +1,7 @@
+Update
+------
+render() --> componentDidUpdate
+
+Mounting Phase
+--------------
+render() --> componentDidMount 

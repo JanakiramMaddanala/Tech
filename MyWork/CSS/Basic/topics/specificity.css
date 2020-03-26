@@ -1,0 +1,47 @@
+
+#blog-header {
+    /* color: blue; */
+    background: lightgray;
+}
+
+h1 {
+  color: purple;
+}
+
+h1 {
+    color: black;
+}
+
+[name] {
+    color: red;
+}
+
+.blog-header {
+  color: violet;
+  /* font-size: 2em; */
+}
+
+.blog {
+  background: purple;
+  color: white;
+}
+
+p {
+    color: lightpink;
+}
+
+div {
+    color: limegreen
+}
+
+html {
+    color: yellowgreen;
+    font-size: 2rem;
+}
+
+.blog-footer {
+    color: peru;
+}
+ 
+
+

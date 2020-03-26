@@ -1,0 +1,6 @@
+mongoimport --db test --collection inventory ^
+          --authenticationDatabase admin --username <user> --password <password> ^
+          --drop --file ~\downloads\inventory.crud.json
+
+
+mongoimport --db Sample --collectin Inventory --drop --file C:\Users\jmaddanala\Desktop\inventory.crud.json
